@@ -26,7 +26,7 @@ async def process_start_command(message: types.Message):
 			if message.reply_to_message.forward_from.id:
 					await boty.send_message(message.reply_to_message.forward_from.id, message.text)
 		else:
-			await message.answer('Не можна відповідати на повідомлення.')
+			await message.answer('Дайте відповідь на повідомлення в особистий чат користувача будь ласка.')
 
 
 @dp.message_handler(content_types=['photo'])
